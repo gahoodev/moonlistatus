@@ -19,11 +19,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // サーバー情報を取得する関数
     async function getServerStatus() {
         // Java Edition用のAPI呼び出し
-        const jeResponse = await fetch('https://api.mcsrvstat.us/2/moonliser.f5.si');
+        const jeResponse = await fetch('https://api.mcsrvstat.us/2/tokaitown.minekeep.gg');
         const jeData = await jeResponse.json();
 
         // Bedrock Edition用のAPI呼び出し
-        const beResponse = await fetch('https://api.mcsrvstat.us/bedrock/2/moonliser.f5.si');
+        const beResponse = await fetch('https://api.mcsrvstat.us/bedrock/2/tokaitown.bedrock.minekeep.gg');
         const beData = await beResponse.json();
 
         // 現在の日時を取得
